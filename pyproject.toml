@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beats"
+version = "0.1.0"
+description = "Desktopová aplikace pro zobrazování hudebního rytmu (BPM) pomocí červené tečky."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Junie", email = "junie@jetbrains.com" }
+]
+dependencies = [
+    "PyQt6>=6.0.0",
+    "pynput>=1.7.0",
+]
+
+[project.gui-scripts]
+beats = "main:main"
